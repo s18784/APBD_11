@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace APBD_11.Models
+namespace APBD_11.DTO
 {
-    [Table("Doctor")]
-    public class DoctorModel
+    public class DoctorUpdateRequest
     {
-        [Key]
-        public int IdDoctor { get; set; }
-        [MaxLength(100)]
         [Required]
+        public int Id { get; set; }
+
         public string FirstName { get; set; }
-        [MaxLength(100)]
-        [Required]
+
         public string LastName { get; set; }
-        [MaxLength(100)]
-        [Required]
+
         public string Email { get; set; }
     }
 }

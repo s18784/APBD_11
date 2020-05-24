@@ -26,7 +26,7 @@ namespace APBD_11
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MyDbContext>(options =>
+            services.AddDbContext<DoctorDbContext>(options =>
             {
                 options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18784;Integrated Security=True;");
             });

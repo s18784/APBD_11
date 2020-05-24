@@ -13,12 +13,14 @@ namespace APBD_11.Models
         [Key]
         public int IdPatient{ get; set; }
         [MaxLength(100)]
+        [Required]
         public string FirstName { get; set; }
         [MaxLength(100)]
+        [Required]
         public string LastName { get; set; }
         [MaxLength(100)]
-
+        [Required]
         [Column(TypeName = "Date")]
-        public DateTime Email { get; set; }
+        public DateTime Birthdate { get; set; }
     }
 }

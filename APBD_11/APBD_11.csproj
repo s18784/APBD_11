@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200524181300_Added3BasicTables.cs" />
+    <Compile Remove="Migrations\20200524181300_Added3BasicTables.Designer.cs" />
+    <Compile Remove="Migrations\20200524181427_AddedDoctorTable.cs" />
+    <Compile Remove="Migrations\20200524181427_AddedDoctorTable.Designer.cs" />
+    <Compile Remove="Migrations\20200524182005_AddedPatientAndMedicamentsTable.cs" />
+    <Compile Remove="Migrations\20200524182005_AddedPatientAndMedicamentsTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
